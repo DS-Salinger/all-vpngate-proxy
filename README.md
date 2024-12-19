@@ -12,7 +12,7 @@ docker run --rm -it \
 --cap-add=NET_ADMIN --device=/dev/net/tun \
 --dns=1.1.1.1 --dns=8.8.8.8 --dns=9.9.9.9 \
 -p 8118:8118 \
-salinger001101/all-vpngate-proxy
+salinger001101/all-vpggate-proxy:latest
 ```
 
 # 起動確認
