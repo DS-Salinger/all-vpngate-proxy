@@ -14,7 +14,7 @@ function connect {
       line=$(echo $line | cut -d ',' -f 15)
       line=$(echo $line | tr -d '\r')
       openvpn <(echo "$line" | base64 -d) ;
-    done < <(curl -s $VPNGATE_URL | grep ,Japan,JP, | grep -v public-vpn- | sort -R )
+    done < <(curl -s $VPNGATE_URL | grep -v public-vpn- | sort -R )
     echo end
   done
 }
